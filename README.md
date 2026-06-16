@@ -1,4 +1,4 @@
-<div align= "center">
+<div align="center">
 
 ⭐ **If you like this project, give the repository a star!** ⭐ <br>
 ------- 🇮🇹 **[Readme in Italiano][readme-it-url]** 🇮🇹 --------
@@ -16,17 +16,13 @@
 
 <hr/>
 
-<a href="https://github.com/Matese-Makers/FreeClock">
-<img alt="FreeClock Project" src="./gh-assets/FreeClock_project.png" width="200">
-</a>
-
 <p><em>This model is part of the <a href="https://github.com/Matese-Makers/FreeClock"><strong>FreeClock</strong></a> project — an open source smart clock, easy to assemble, with a 3D-printable shell and a mobile app for management. Build yours and join the project!</em></p>
 
 </div>
 
 ## 💡 Overview
 
-FreeClock 3D Print contains all the **STL** files of the 3D-printable FreeClock shell.\
+FreeClock 3D Print contains all the **STL** files of the 3D-printable FreeClock shell, along with the source **CAD** file and the ready-to-slice **3MF** project.\
 The case is designed to house the **FreeClock ESP32** electronics and was engineered to be simple to print and quick to assemble, even if you are new to 3D printing.
 
 ## ✨ Features
@@ -38,18 +34,48 @@ The case is designed to house the **FreeClock ESP32** electronics and was engine
 - 📦 **Modular design** — the shell is split into multiple parts that print flat and fit together
 - 🖨️ **FDM friendly** — designed for standard FDM printers with a 0.4 mm nozzle and common materials (PLA / PETG)
 
+## 🗂️ Repository Structure
+
+```
+FREECLOCK-model/
+├── 3MF/
+│   └── freeclock.3mf          # Ready-to-slice project file
+├── CAD/
+│   └── FREECLOCK.f3z          # Fusion 360 source file
+├── STL/
+│   ├── a v3.stl               # Part A (variant v3)
+│   ├── b v3.stl               # Part B (variant v3)
+│   ├── buttom.stl             # Bottom base
+│   ├── display cover.stl      # Display cover
+│   ├── frame.stl              # Front frame
+│   ├── main body.stl          # Main body / shell
+│   └── retro.stl              # Rear panel
+├── LICENSE
+├── README.md
+└── README.it.md
+```
+
 ## 🧱 Components
 
-All STL files are located in the [`stl/`](stl/) folder. The numbers indicate the recommended print and assembly order.
+All STL files are located in the [`STL/`](STL/) folder.
 
-| # | File | Description |
-|---|------|-------------|
-| 1 | [`1_box.stl`](stl/1_box.stl) | Main body (shell) that houses the electronics |
-| 2 | [`2_bottom.stl`](stl/2_bottom.stl) | Bottom base of the case |
-| 3 | [`3_top.stl`](stl/3_top.stl) | Top cover |
-| 4 | [`4_back.stl`](stl/4_back.stl) | Rear panel |
-| 5 | [`5_display_mask.stl`](stl/5_display_mask.stl) | Display mask |
-| 6 | [`6_display_frame.stl`](stl/6_display_frame.stl) | Front display frame |
+| File | Description |
+|------|-------------|
+| [`main body.stl`](STL/main%20body.stl) | Main body (shell) that houses the electronics |
+| [`buttom.stl`](STL/buttom.stl) | Bottom base of the case |
+| [`retro.stl`](STL/retro.stl) | Rear panel |
+| [`frame.stl`](STL/frame.stl) | Front display frame |
+| [`display cover.stl`](STL/display%20cover.stl) | Display cover / mask |
+| [`a v3.stl`](STL/a%20v3.stl) | Decorative / structural part A (v3) |
+| [`b v3.stl`](STL/b%20v3.stl) | Decorative / structural part B (v3) |
+
+### 📐 CAD Source
+
+The Fusion 360 source file is available in [`CAD/FREECLOCK.f3z`](CAD/FREECLOCK.f3z) for anyone who wants to modify or remix the design.
+
+### 📦 3MF Project
+
+A ready-to-slice 3MF project file is available in [`3MF/freeclock.3mf`](3MF/freeclock.3mf), pre-configured with part orientation and settings.
 
 ## 🚀 Getting Started
 
@@ -74,13 +100,15 @@ All STL files are located in the [`stl/`](stl/) folder. The numbers indicate the
 1. **Download** or clone the repository:
 
    ```bash
-   git clone https://github.com/luigirossidev/freeclock-3dprint.git
-   cd freeclock-3dprint
+   git clone https://github.com/Danzaywer/FREECLOCK-model.git
+   cd FREECLOCK-model
    ```
 
-2. **Import** the STL files from the [`stl/`](stl/) folder into your slicer.
-3. **Orient** the parts as previewed (they are already designed to print without supports) and run the slicing.
-4. **Print** each component and proceed with assembly following the numeric order.
+2. **Option A — Use the 3MF:** Open [`3MF/freeclock.3mf`](3MF/freeclock.3mf) directly in your slicer for a pre-configured setup.
+
+3. **Option B — Use the STLs:** Import the individual files from the [`STL/`](STL/) folder into your slicer, orient them flat (no supports needed), and slice.
+
+4. **Print** each component and proceed with assembly.
 
 ### 🎨 Multi-color printing (without AMS)
 
@@ -105,7 +133,7 @@ Contributions are welcome! Here's how you can help:
 4. **Push** the branch (`git push origin feature/my-change`)
 5. **Open** a Pull Request
 
-If you printed the case, share a photo or suggest improvements to the model! To report issues or propose new variants, [open an issue](https://github.com/luigirossidev/freeclock-3dprint/issues).
+If you printed the case, share a photo or suggest improvements to the model! To report issues or propose new variants, [open an issue](https://github.com/Danzaywer/FREECLOCK-model/issues).
 
 ## 📄 License
 
